@@ -8,7 +8,7 @@ class App extends React.Component {
     return (
         <div className="catch-of-the-day">
           <div className="menu">
-            <Header tagLine={"Me is kool"} age={3356} mine={true}/>
+            <Header tagLine={"i bolja nego domaca"} age={3356} mine={true}/>
           </div>
           <Order />
           <Inventory />
