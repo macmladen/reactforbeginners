@@ -1,13 +1,10 @@
-// let's go!
+// React for Beginners, class based components in React 17/Router 5
+// MacMladen
 import React from 'react'
-import { createRoot } from 'react-dom/client'
+import { render } from 'react-dom'
 
-import StorePicker from './components/StorePicker'
-import App from './components/App'
 import Router from './components/Router'
 
 import './css/style.css'
 
-const container = document.querySelector('#main')
-const root = createRoot(container)
-root.render(<Router />)
+render(<Router />, document.querySelector('#main'))

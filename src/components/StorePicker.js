@@ -1,6 +1,5 @@
 import React from 'react'
 import { getFunName } from '../helpers'
-import { useNavigate } from "react-router-dom";
 
 class StorePicker extends React.Component {
   storeName = React.createRef()
@@ -8,8 +7,7 @@ class StorePicker extends React.Component {
   goToStore = (event) => {
     event.preventDefault()
     const storeID = this.storeName.current.defaultValue
-    console.log(this.props)
-    // this.props.push(`/store/${storeID}`)
+    this.props.history.push(`/store/${storeID}`)
   }
 
   render() {
