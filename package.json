@@ -30,7 +30,8 @@
     "build-only": "react-scripts build",
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "npm run styles -- -w"
+    "styles:watch": "npm run styles -- -w",
+    "deploy": "npm run build && firebase deploy"
   },
   "browserslist": [
     ">0.2%",
