@@ -5,7 +5,7 @@ import App from './App'
 import NotFound from "./NotFound";
 
 const Router = () => (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={StorePicker} />
         <Route exact path="/store/:storeId" component={App} />
