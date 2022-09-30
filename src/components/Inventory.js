@@ -1,8 +1,17 @@
-import React from 'react'
-import AddFishForm from "./AddFishForm";
-import FishFormEdit from "./FishFormEdit";
+import React from "react"
+import PropTypes from "prop-types"
+import AddFishForm from "./AddFishForm"
+import FishFormEdit from "./FishFormEdit"
 
 class Inventory extends React.Component {
+  static propTypes = {
+    fishes: PropTypes.object,
+    addFish: PropTypes.func,
+    updateFish: PropTypes.func,
+    deleteFish: PropTypes.func,
+    loadSampleFishes: PropTypes.func,
+  }
+
   render() {
     return (
         <div className="inventory">

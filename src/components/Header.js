@@ -1,6 +1,11 @@
-import React from 'react'
+import React from "react"
+import PropTypes from "prop-types"
 
 class Header extends React.Component {
+  static propTypes = {
+    tagLine: PropTypes.string,
+  }
+
   render() {
     return (
         <>
