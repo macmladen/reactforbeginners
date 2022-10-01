@@ -45,6 +45,14 @@ class Inventory extends React.Component {
     })
   }
 
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged( (user) => {
+      if (user) {
+        this.authHandler({ user })
+      }
+    })
+  }
+
   render() {
     const Logout = <button onClick={this.logout}>Log Out!</button>
     if (!this.state.uid) {
